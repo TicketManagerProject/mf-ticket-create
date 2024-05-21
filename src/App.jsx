@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
-import Table from "./components/ViewTicket";
 import InfoUser from "./components/InfoUser";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css"; 
@@ -20,13 +19,8 @@ const tableData = [
 const App = () => (
   <BrowserRouter>
     <div className="container supercontainer">
-      <div className="row">
-        <div className="col-md-6">
-          <Table data={tableData} columns={["id", "Ticket", "Date", "Time", "Outbuilding"]} />
-        </div>
         <div className="col-md-6">
           <InfoUser />
-        </div>
       </div>
     </div>
   </BrowserRouter>
