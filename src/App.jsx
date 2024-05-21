@@ -6,16 +6,6 @@ import InfoUser from "./components/TicketCreate";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css"; 
 
-const tableData = [
-  {
-    id: 1,
-    Ticket: "ABC123",
-    Date: "2024-05-02",
-    Time: "7:00 PM",
-    Outbuilding: "Building B",
-  }
-];
-
 const App = () => (
   <BrowserRouter>
     <div className="container supercontainer">
