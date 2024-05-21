@@ -3,7 +3,7 @@ import { Card, Button, Form, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../index.css";
 
-const InfoUser = () => {
+const TicketCreate = () => {
   const [validated, setValidated] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState("");
   const [dateTime, setDateTime] = useState("");
@@ -187,4 +187,4 @@ const InfoUser = () => {
   );
 };
 
-export default InfoUser
+export default TicketCreate
