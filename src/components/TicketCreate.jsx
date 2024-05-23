@@ -42,12 +42,12 @@ const TicketCreate = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight: "100vh",
+        minHeight: "90vh",
       }}
     >
       <Card
         style={{
-          width: "45rem",
+          width: "35rem",
           backgroundColor: "#ECEBF4",
           borderRadius: "20px",
         }}
@@ -154,14 +154,13 @@ const TicketCreate = () => {
                   Create Ticket
                 </Button>
               </div>
-              {/*Mensaje */}
               {success && (
                 <div className="text-center mt-3" style={{ color: "green" }}>
                   Appointment created successfully!
                   <div>Ticket Number: {appointments[appointments.length - 1].room}</div>
                   <div>Date: {new Date(appointments[appointments.length - 1].dateTime).toLocaleDateString()}</div>
                   <div>Time: {new Date(appointments[appointments.length - 1].dateTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</div>
-                  {/* Add the location based on the room */}
+                  
                   <div>Location: {appointments[appointments.length - 1].room === "room1" ? "Office10" : "Office14"}</div>
                 </div>
               )}
@@ -176,7 +175,7 @@ const TicketCreate = () => {
                 Is this not your ID number?&nbsp;
                 </span>
                 <Link to={"/"} style={{ color: "#23294B", fontWeight: "bold" }}>
-                  Log in
+                  Log out
                 </Link>
               </div>
             </Form>
